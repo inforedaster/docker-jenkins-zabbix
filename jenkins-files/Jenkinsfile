@@ -1,4 +1,4 @@
-node("docker-slave") {
+node("slave-docker") {
     docker.withRegistry('https://hub.docker.com/u/inforedaster/', '621e99e4-32cb-4f57-9466-3572d4e4e879') {
     
         git url: "https://github.com/inforedaster/docker-jenkins-zabbix.git"
